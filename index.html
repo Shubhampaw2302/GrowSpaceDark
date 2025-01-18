@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Space Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cursor-trail {
+            width: 5px;
+            height: 5px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            animation: trail-fade 1s linear forwards;
+        }
+        
+        @keyframes trail-fade {
+            from {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="text-success">Grow</span>Space
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#properties">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4">Find Your Dream Space</h1>
+                    <p class="lead">Discover premium properties that grow with your aspirations</p>
+                    <a href="#properties" class="btn btn-success btn-lg">
+                        <span>Explore Properties</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Featured Properties</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" class="card-img-top" alt="Luxury Home">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Villa</h5>
+                            <p class="card-text">$1,200,000</p>
+                            <p>4 Beds | 3 Baths | 3,200 sqft</p>
+                            <a href="#" class="btn btn-success">
+                                <i class="fas fa-home me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750" class="card-img-top" alt="Modern Apartment">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Apartment</h5>
+                            <p class="card-text">$450,000</p>
+                            <p>2 Beds | 2 Baths | 1,100 sqft</p>
+                            <a href="#" class="btn btn-success">
+                                <i class="fas fa-building me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="property-card">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="card-img-top" alt="Family Home">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Home</h5>
+                            <p class="card-text">$850,000</p>
+                            <p>5 Beds | 4 Baths | 2,800 sqft</p>
+                            <a href="#" class="btn btn-success">
+                                <i class="fas fa-key me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h2 class="mb-4">About Grow Space</h2>
+                    <p>We are a premium real estate firm dedicated to helping you find the perfect space for your needs. With years of experience and a commitment to excellence, we ensure every client receives personalized attention and exceptional service.</p>
+                    <div class="stats mt-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <h3 class="counter">500+</h3>
+                                <p>Properties Sold</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="counter">1000+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="counter">15+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11" class="img-fluid rounded" alt="Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <a href="https://maps.google.com/?q=123+Real+Estate+Ave,City,Country" target="_blank" class="contact-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Visit Us</h4>
+                            <p>123 Real Estate Ave,<br>City, Country</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <a href="https://instagram.com/growspace" target="_blank" class="contact-link">
+                            <i class="fab fa-instagram"></i>
+                            <h4>Follow Us</h4>
+                            <p>@growspace</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <a href="tel:+12345678900" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            <h4>Call Us</h4>
+                            <p>+1 234 567 8900</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-card">
+                        <a href="mailto:info@growspace.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email Us</h4>
+                            <p>info@growspace.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12" data-aos="zoom-in">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007!5e0!3m2!1sen!2sus!4v1644262070010!5m2!1sen!2sus"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Grow Space. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
