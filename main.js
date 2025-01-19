@@ -155,3 +155,5 @@ document.addEventListener('mousemove', function(e) {
         trail.remove();
     }, 1000);
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();

@@ -1,8 +1,9 @@
 :root {
     --primary-color: #2ecc71;
-    --dark-color: #1a1a1a;
+    --dark-color: black;
     --light-color: #f4f4f4;
-    --glow-color: rgba(46, 204, 113, 0.5);
+    /* --glow-color: rgba(22, 55, 36, 0.5); */
+    --glow-color: rgba(27, 68, 44, 0.5);
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: rgba(26, 26, 26, 0.9);
+    background-color: var(--dark-color);
     padding: 1rem 0;
     transition: all 0.3s ease;
     border-bottom: 2px solid var(--glow-color);
@@ -73,6 +74,12 @@ body {
     100% { opacity: 0; }
 }
 
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
 /* Property Cards */
 .property-card {
     background-color: var(--dark-color);
@@ -80,6 +87,7 @@ body {
     transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
+    animation: float 6s ease-in-out infinite;
 }
 
 .property-card::before {
