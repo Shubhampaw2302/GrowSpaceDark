@@ -319,3 +319,7 @@ footer::before {
     z-index: 9999;
     box-shadow: 0 0 10px var(--glow-color);
 }
+
+#properties .row {
+    justify-content: center;
+}
