@@ -18,15 +18,15 @@ window.addEventListener('scroll', function() {
         scrollIndicator.style.width = scrolled + '%';
     }
 
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-        navbar.style.padding = '0.5rem 0';
-        navbar.style.boxShadow = '0 2px 20px var(--glow-color)';
-    } else {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.9)';
-        navbar.style.padding = '1rem 0';
-        navbar.style.boxShadow = 'none';
-    }
+    // if (window.scrollY > 50) {
+    //     navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
+    //     navbar.style.padding = '0.5rem 0';
+    //     navbar.style.boxShadow = '0 2px 20px var(--glow-color)';
+    // } else {
+    //     navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.9)';
+    //     navbar.style.padding = '1rem 0';
+    //     navbar.style.boxShadow = 'none';
+    // }
 });
 
 // Add scroll indicator
